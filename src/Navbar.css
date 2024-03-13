@@ -1,0 +1,57 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.myname{
+    /* flex-grow: 1; */
+    text-align: center;
+    margin-left: 114px;
+    font-size: 40px;
+}
+.contact{
+    /* flex-grow: 1; */
+    text-align: center;
+    margin-right: 114px;
+    font-size: 20px;
+
+}
+
+.options{
+    flex-grow: .2;
+    text-align: center;
+}
+.options-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.hamburger{
+    display: none;
+
+}
+
+@media (max-width:750px){
+    .options{
+        display: none;
+    }
+    .contact{
+        display: none;
+    }
+    .myname{
+        margin-left: 50px;
+    }
+    .hamburger{
+        display: block;
+        margin-right: 50px;
+        
+    
+    }
+}
+
+
+
