@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import Button from './Button';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     let Links =[
-      {name:"HOME",link:"/Home.jsx"},
-      {name:"PROJECTS",link:"/"},
-      {name:"ABOUT",link:"/"},
+      { name: "HOME", link: "/home" },
+      { name: "PROJECTS", link: "/projects" },
+      { name: "ABOUT", link: "/about" },
     ];
     let [open,setOpen]=useState(false);
   return (
@@ -28,7 +29,7 @@ const Navbar = () => {
         {
           Links.map((link)=>(
             <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7'>
-              <a href={link.link} className='text-white hover:text-orange-400 duration-500'>{link.name}</a>
+              <Link to={link.link} className='text-white hover:text-orange-400 duration-500'>{link.name}</Link>
             </li>
           ))
         }
