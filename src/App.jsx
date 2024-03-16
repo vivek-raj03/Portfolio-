@@ -7,9 +7,8 @@ import About from './About';
 function App() {
   return (
     <Router>
-      <Navbar />
       <Switch>
-        <Route path="/home" element={<Home/>} />
+        <Route path="/" element={<Home/>} />
         <Route path="/projects" element={<Projects/>} />
         <Route path="/about" elementS={<About/>} />
       </Switch>

@@ -2,13 +2,15 @@ import React, { useState } from 'react'
 import Button from './Button';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({handleGlow}) => {
     let Links =[
-      { name: "HOME", link: "/home" },
+      { name: "HOME", link: "/" },
       { name: "PROJECTS", link: "/projects" },
       { name: "ABOUT", link: "/about" },
     ];
     let [open,setOpen]=useState(false);
+    
+    
   return (
     <div className='  w-full fixed top-0 left-0 font-roberto'>
       <div className='md:flex items-center justify-between bg-black py-4 md:px-10 px-7'>
@@ -33,9 +35,10 @@ const Navbar = () => {
             </li>
           ))
         }
-        <Button>
-          CONTACT
-        </Button>
+        <button className='bg-orange-600 text-white py-2 px-6 rounded-full md:ml-8 hover:bg-orange-400 
+    duration-500 hover:text-black font-roberto' onClick={handleGlow}>
+      Contacts
+    </button>
       </ul>
       </div>
     </div>
