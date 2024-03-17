@@ -11,9 +11,9 @@ const Navbar = ({handleGlow}) => {
     
     
   return (
-    <div className='  w-full fixed top-0 left-0 font-roberto'>
+    <div className='  w-full fixed top-0 left-0 font-roberto z-10'>
       <div className='md:flex items-center justify-between bg-black py-4 md:px-10 px-7'>
-      <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
+      <div className='font-bold text-2xl cursor-pointer flex items-center 
       text-gray-800'>
         <span className='text-3xl font-roberto text-white mr-1 pt-2'>
         Vivek

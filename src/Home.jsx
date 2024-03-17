@@ -24,7 +24,7 @@ function Home() {
   return (
     <>
       <Navbar handleGlow={useHandleGlow} />
-      <div className="bg-black  w-full z-[-99] md:space-x-96 flex md:flex-row flex-col h-screen  text-white ">
+      <div className="bg-black  w-full z-[-99] md:space-x-96 flex md:flex-row flex-col min-h-screen  text-white ">
         <div className="text-white">
           <div className=" mt-28 md:mt-60 md:ml-32 font-roberto">
             <p className=" text-5xl md:text-7xl w-full text-center md:text-left">Hi There</p>
