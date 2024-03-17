@@ -10,7 +10,7 @@ function App() {
       <Switch>
         <Route path="/" element={<Home/>} />
         <Route path="/projects" element={<Projects/>} />
-        <Route path="/about" elementS={<About/>} />
+        <Route path="/about" element={<About/>} />
       </Switch>
     </Router>
   );
