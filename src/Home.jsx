@@ -31,7 +31,7 @@ function Home() {
             <p className='text-5xl md:text-7xl text-center md:text-left mt-3'>I'm Vivek <span className="text-orange-500">Raj</span></p>
             <p className='md:text-4xl text-3xl text-center md:text-left ml-1 mt-5'>I am a <span className="text-orange-500">{text}</span><Cursor></Cursor></p>
             <div className='md:mt-3 mt-24 md:flex w-full '>
-              <ul className={`flex justify-center md:justify-start space-x-7 md:bg-black bg-white ${glow ? 'md:glowing-element' : 'bg-white'}`}>
+              <ul className={`flex justify-center md:justify-start space-x-7 md:bg-black bg-white ${glow ? 'glowing-element' : 'bg-white'}`}>
                 <li className='md:text-6xl text-4xl mt-2 text-orange-600'><a href='https://www.linkedin.com/in/code-vivek/' target='blank'><ion-icon name="logo-linkedin"></ion-icon></a></li>
                 <li className='md:text-6xl text-4xl mt-2 text-orange-600'><a href='https://github.com/vivek-raj03' target='blank'><ion-icon name="logo-github"></ion-icon></a></li>
                 <li className='md:text-6xl text-4xl mt-2 text-orange-600'><a href='mailto:vivekraj322003@gmail.com' target='blank'><ion-icon name="mail-outline"></ion-icon></a></li>
