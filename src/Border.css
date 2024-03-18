@@ -1,0 +1,20 @@
+.box{
+    box-shadow: 2px 2px white;
+}
+.text-shadow{
+    text-shadow: 2px 2px white;
+}
+.box:hover{
+    animation: glow-animation 1s ease-in-out infinite alternate;
+    border-top: 0;
+    border-left:0 ;
+}
+
+@keyframes glow-animation {
+    0% {
+      /* box-shadow: 0 0 10px #ff8000; */
+    }
+    100% {
+      /* box-shadow: 0 0 20px  #ff8000;  */
+    }
+  }

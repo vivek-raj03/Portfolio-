@@ -1,9 +1,11 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import React from 'react'
 import Navbar from './Navbar'
 import './Glow.css'
 import vec1 from './assets/vec1.png'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function Home() {
 
@@ -21,12 +23,17 @@ function Home() {
     typeSpeed: 100,
     deleteSpeed: 40
   });
+
+  useEffect(()=>{
+    AOS.init({duration:2000});
+  },[]);
+  
   return (
     <>
-      <Navbar handleGlow={useHandleGlow} />
+      <Navbar handleGlow={useHandleGlow}  />
       <div className="bg-black  w-full z-[-99] md:space-x-96 flex md:flex-row flex-col min-h-screen  text-white ">
         <div className="text-white">
-          <div className=" mt-28 md:mt-60 md:ml-32 font-roberto">
+          <div className=" mt-28 md:mt-60 md:ml-32 font-roberto" data-aos="fade-right">
             <p className=" text-5xl md:text-7xl w-full text-center md:text-left">Hi There</p>
             <p className='text-5xl md:text-7xl text-center md:text-left mt-3'>I'm Vivek <span className="text-orange-500">Raj</span></p>
             <p className='md:text-4xl text-3xl text-center md:text-left ml-1 mt-5'>I am a <span className="text-orange-500">{text}</span><Cursor></Cursor></p>
@@ -41,7 +48,7 @@ function Home() {
           </div>
         </div>
         <div className='flex w-full md:w-fit justify-center'>
-          <img className=' md:w-96 md:h-96 h-60 w-60 mt-5 md:mt-48 ' src={vec1} alt='' />
+          <img className=' md:w-96 md:h-96 h-60 w-60 mt-5 md:mt-48 ' src={vec1} alt='' data-aos="fade-left"/>
         </div>
       </div>
     </>

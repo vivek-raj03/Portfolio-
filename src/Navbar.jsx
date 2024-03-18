@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState , useEffect} from 'react'
 import { Link } from 'react-router-dom';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Navbar = ({handleGlow}) => {
     let Links =[
@@ -8,10 +10,14 @@ const Navbar = ({handleGlow}) => {
       { name: "ABOUT", link: "/about" },
     ];
     let [open,setOpen]=useState(false);
+
+    useEffect(()=>{
+      AOS.init({duration:1000});
+    },[]);
     
     
   return (
-    <div className='  w-full fixed top-0 left-0 font-roberto z-10'>
+    <div className='  w-full fixed top-0 left-0 font-roberto z-10' data-aos="fade-down">
       <div className='md:flex items-center justify-between bg-black py-4 md:px-10 px-7'>
       <div className='font-bold text-2xl cursor-pointer flex items-center 
       text-gray-800'>
