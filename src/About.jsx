@@ -19,18 +19,17 @@ import 'aos/dist/aos.css'
 
 function About() {
   useEffect(()=>{
-    AOS.init({duration:2000});
+      AOS.init({duration:2000});
   },[]);
-
   return (
     <>
       <Navbar data-aos="fade-down"></Navbar>
 
-      <div className="bg-black  w-full z-[-99]  flex md:flex-col flex-col   text-white  font-roberto">
+      <div className="bg-black  w-full z-[-99]  flex md:flex-col flex-col   text-white  font-roberto overflow-x-hidden">
         <div className='w-full flex justify-center'>
           <div className=" mt-28 md:mt-40 flex w-3/4 flex-col font-roberto">
             <div className='text-4xl text-orange-600 mb-3 text-shadow'data-aos="fade-right">Hello, and welcome to my portfolio!</div>
-            <div data-aos="fade-left">
+            <div data-aos="fade-right">
             <p className='mb-3' >I am a passionate and driven B.Tech Computer Science student currently pursuing my education at Chitkara University. With a fervent curiosity for technology and a determination to make a meaningful impact in the world of computing, I immerse myself in every aspect of my field.</p>
             <p className='mb-3'>Throughout my academic journey, I have embraced challenges and sought out opportunities to expand my knowledge and skills. Whether it's delving into complex algorithms, exploring the latest developments in artificial intelligence, or honing my coding abilities, I approach each task with enthusiasm and a desire to learn.
             </p>
