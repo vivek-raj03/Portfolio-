@@ -7,12 +7,12 @@ function Pcard(props) {
     const[isOpen,setIsOpen] = useState(false);
     return (
         <>
-            <motion.div transition={{layout:{duration:2}}}layout onClick={()=>setIsOpen(!isOpen)} className='bg-black w-80 h-80 text-white flex flex-col justify-center items-center border-2 border-slate-50 rounded-xl'>
+            <motion.div transition={{layout:{duration:2}}}layout onClick={()=>setIsOpen(!isOpen)} className='bg-black w-80 h-80 text-white flex flex-col justify-center items-center border-2 border-slate-50 rounded-xl font-roberto'>
                 <motion.h2 layout="position" className='text-3xl font-roberto mb-4 text-orange-500 text-shadow'>{title}</motion.h2>
                 {isOpen && (
                     <>
                 <p className='text-center'>{description}</p>
-                <a href={address} target='blank'>Click here</a>
+                <a href={address} target='blank' className='bg-orange-600 w-28 flex justify-center mt-3 rounded-lg click'>Click here</a>
                 </>
                 )}
             </motion.div>
