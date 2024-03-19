@@ -90,11 +90,11 @@ function About() {
           </div>
         </div>
         <div className='w-full flex justify-center'>
-          <div className=" mt-7 flex md:w-1/2 w-3/4 flex-col font-roberto border-2 items-center border-slate-50 pt-3 pb-3 rounded-xl box"data-aos="zoom-in">
+          <div className=" mt-7 flex md:w-1/2 w-96 md:h-72 h-64 flex-col font-roberto border-2 items-center border-slate-50 pt-3 pb-3 rounded-xl box"data-aos="zoom-in">
            <div className='text-4xl text-orange-600 mb-3 text-shadow'>Education</div>
-           <sapn className='text-2xl text-orange-600 '> B.E. in Computer Science Engineering:</sapn>Chitkara University - 2021-2025
-           <sapn className='text-2xl text-orange-600 mt-3'> Higher Secondary School :</sapn>OP Jindal School, Ramgarh - 2019- 2021
-           <sapn className='text-2xl text-orange-600 mt-3'> Secondary School :</sapn>OP Jindal School, Ramgarh - 2018- 2019
+           <sapn className='text-xl text-orange-600 '> B.E. in Computer Science Engineering:</sapn>Chitkara University - 2021-2025
+           <sapn className='text-xl text-orange-600 mt-3'> Higher Secondary School :</sapn>OP Jindal School, Ramgarh - 2019- 2021
+           <sapn className='text-xl text-orange-600 mt-3'> Secondary School :</sapn>OP Jindal School, Ramgarh - 2018- 2019
           </div>
         </div>
       </div>
